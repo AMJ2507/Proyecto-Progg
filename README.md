@@ -68,9 +68,27 @@ void laberitno()
 }
 
 
-void imprimirlaberinto(){
-
-                        }
+void mostrarlaberinto()
+	{
+	
+		int i, j;
+		for (i = ;i < ;i)
+		{
+			for(j = ;j < ;j)
+			{
+				if(m[i][j] < )
+				{
+					printf(" ");
+				}
+				else
+				{
+					printf("%c", 185);
+				}
+			}
+		
+		}
+	
+	}
 
 
 void coliciones(){
