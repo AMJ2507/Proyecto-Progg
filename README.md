@@ -8,10 +8,10 @@ COORD cxy;
 #define posicion(x,y) {(cxy.X)= (x);(cxy.Y)= (y); SetConsoleCursorPosition((GetStdHandle(STD_OUTPUT_HANDLE)), (cxy) );}
 
 char m[][];
-char f=, c=;
+char ab=, id=;
 char movletra;
 
-void desplazamiento()
+void desplazamiento()	
 	{
 	
 		do
@@ -19,46 +19,79 @@ void desplazamiento()
 			movletra= getch();
 			switch(movletra)
 				{
-					case:
-					posicion(); printf();
-					f;
-					posicion(); printf();
+					case 119: //w para subir
+					posicion(id, ab); 
+					printf(" ");
+					ab--;
+					posicion(id, ab); 
+					printf("%c", 254);
 					break;
-					case:
-					posicion(); printf();
-					c;
-					posicion(); printf();
+					case 100://d para izquierda
+					posicion(id, ab); 
+					printf(" ");
+					id++;
+					posicion(id, ab); 
+					printf("%c", 254);
 					break;
-					case:
-					posicion(); printf();
-					c;
-					posicion(); printf();
+					case 97://a para derecha
+					posicion(id, ab); 
+					printf(" ");
+					id--;
+					posicion(id, ab); 
+					printf("%c", 254);
 					break;
-					case:
-					posicion(); printf();
-					f;
-					posicion(); printf();
+					case 115://s para bajar
+					posicion(id, ab); 
+					printf(" ");
+					ab++;
+					posicion(id, ab); 
+					printf("%c", 254);
 					break;
 				}		
 		}
-		while();
+		while(ab!=1);
 	
 	}
-                      
-void laberitno(){
+   
+   
+void laberitno()
+{
 
-                }
+	int i, j;
+	for (i = ; i < ; i++)
+	{
+		for(j = ; j < ; j++)
+		{
+			m[i][j]=rand()% ;
+		}
+	}
+}
+
 
 void imprimirlaberinto(){
 
                         }
 
+
 void coliciones(){
 
                   }
 
-int main(){
-            
-            printf("Para moverte utiliza las teclas W para subir %c, S para bajar %c, A para izquierda %c y D para derecha %c", 24, 25, 27, 26);
-            
-          }
+
+int main()
+{
+	
+	printf("\tPara moverte utiliza las teclas W para subir %c, S para bajar %c, A para izquierda %c,  D para derecha %c", 24, 25, 27, 26);
+	printf("\n\n\n");
+	
+	srand(time(NULL));
+	laberinto();
+	mostrarlaberinto();
+	posicion(id, ab);
+	printf("%c", 254);
+	colisiones();
+	desplazamiento();
+
+	getch();
+	return 0;
+}
