@@ -73,6 +73,7 @@ void laberitno()
 del arreglo m donde el valor que se le ha asignado aleatoriamente
 sea menor que 50, me aparezca como un espacio en blanco, y el resto 
 de valores que imprima los caracteres indicados ╣ ║ ╗ ╝ ╚ ╔ ╩ ╦ ╠ ═ ╬ */
+
 void mostrarlaberinto()
 	{
 	
