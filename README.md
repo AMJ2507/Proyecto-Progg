@@ -54,8 +54,7 @@ void desplazamiento()
 	}
 
 
-/*Genero valores aleatorios para todas las posiciones 
-de mi arreglo bidimensional m*/  
+//Genero valores aleatorios para todas las posiciones de mi arreglo bidimensional m  
 void laberitno()
 {
 
