@@ -26,21 +26,21 @@ void desplazamiento()
 					posicion(id, ab); 
 					printf("%c", 254);
 					break;
-					case 100://d para izquierda
+					case 100: //d para izquierda
 					posicion(id, ab); 
 					printf(" ");
 					id++;
 					posicion(id, ab); 
 					printf("%c", 254);
 					break;
-					case 97://a para derecha
+					case 97: //a para derecha
 					posicion(id, ab); 
 					printf(" ");
 					id--;
 					posicion(id, ab); 
 					printf("%c", 254);
 					break;
-					case 115://s para bajar
+					case 115: //s para bajar
 					posicion(id, ab); 
 					printf(" ");
 					ab++;
@@ -59,11 +59,11 @@ void laberitno()
 {
 
 	int i, j;
-	for (i = ; i < ; i++)
+	for (i = 0; i < 20; i++)
 	{
-		for(j = ; j < ; j++)
+		for(j = 0; j < 80; j++)
 		{
-			m[i][j]=rand()% ;
+			m[i][j]=rand()%100;
 		}
 	}
 }
@@ -78,11 +78,11 @@ void mostrarlaberinto()
 	{
 	
 		int i, j;
-		for (i = ;i < ;i)
+		for (i = 0;i < 20;i)
 		{
-			for(j = ;j < ;j)
+			for(j = 0;j < 80;j)
 			{
-				if(m[i][j] < )
+				if(m[i][j] < 60)
 				{
 					printf(" ");
 				}
