@@ -52,8 +52,10 @@ void desplazamiento()
 		while(ab!=1);
 	
 	}
-   
-   
+
+
+/*Genero valores aleatorios para todas las posiciones 
+de mi arreglo bidimensional m*/  
 void laberitno()
 {
 
@@ -68,6 +70,10 @@ void laberitno()
 }
 
 
+/*dibuja el laberinto diciendo que para cualquier posición
+del arreglo m donde el valor que se le ha asignado aleatoriamente
+sea menor que 50, me aparezca como un espacio en blanco, y el resto 
+de valores que imprima los caracteres indicados ╣ ║ ╗ ╝ ╚ ╔ ╩ ╦ ╠ ═ ╬ */
 void mostrarlaberinto()
 	{
 	
