@@ -7,8 +7,8 @@ Proyecto Final
 COORD cxy;
 #define posicion(x,y) {(cxy.X)= (x);(cxy.Y)= (y); SetConsoleCursorPosition((GetStdHandle(STD_OUTPUT_HANDLE)), (cxy) );}
 
-char m[][];
-char ab=, id=;
+char m[20][80];
+char ab= 2, id= 0;
 char movletra;
 
 void desplazamiento()	
@@ -61,7 +61,7 @@ void laberitno()
 	int i, j;
 	for (i = 0; i < 20; i++)
 	{
-		for(j = 0; j < 80; j++)
+		for(j = 0; j < 40; j++)
 		{
 			m[i][j]=rand()%100;
 		}
@@ -88,7 +88,12 @@ void mostrarlaberinto()
 				}
 				else
 				{
-					printf("%c", 185);
+					int i;
+   					srand(time(NULL));
+    					for(i = 0; i < 1; i++)
+					{
+        					printf("%c", 185 + rand() % ((185 - 188, 200 - 206) + 1));
+    					}
 				}
 			}
 		
