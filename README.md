@@ -2,6 +2,7 @@
 Proyecto Final
 
 #include <stdio.h>
+#include<conio.h>
 #include <windows.h>
 
 
@@ -107,7 +108,6 @@ int main()
 	printf("\tPara moverte utiliza las teclas W para subir %c, S para bajar %c, A para izquierda %c,  D para derecha %c", 24, 25, 27, 26);
 	printf("\n\n\n");
 	
-	srand(time(NULL));
 	laberinto();
 	mostrarlaberinto();
 	posicion(id, ab);
@@ -121,4 +121,3 @@ int main()
 	return 0;	
 	
 }
-
